@@ -46,7 +46,7 @@ namespace Translator
 
             for (int i = 0; i < _str2.Length; i++ )
             {
-                _srt += listMorse.Find(c => c.Value == morse[i].ToString()).Key;
+                _srt += listMorse.Find(c => c.Value == _str2[i].ToString()).Key;
             }
 
             return _srt;
