@@ -18,11 +18,17 @@ namespace Translator
 
             Console.Out.WriteLine(text);
 
-            text = "AB";
+            text = "A";
 
             text = translator.Translate(text, Format.Text, Format.Morse);
 
             Console.Out.WriteLine(text);
+
+
+            text = translator.Translate(text, Format.Morse, Format.Text);
+
+            Console.Out.WriteLine(text);
+
 
 
 

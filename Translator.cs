@@ -40,7 +40,17 @@ namespace Translator
 
         public string MorseTotext(string morse)
         {
-            throw new NotImplementedException();
+            string _srt = "";
+
+            string[]  _str2 = morse.Split(" ");
+
+            for (int i = 0; i < _str2.Length; i++ )
+            {
+
+                _srt += listBinary.Find(c => c.Value == morse[i].ToString()).Key;
+            }
+
+            return _srt;
 
         }
 
