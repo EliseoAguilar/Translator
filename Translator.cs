@@ -16,9 +16,9 @@ namespace Translator
     };
 
     private List<KeyValuePair<char, string>> listMorse = new List<KeyValuePair<char, string>>() {
-            new KeyValuePair<char, string>('A', "· —"),
-            new KeyValuePair<char, string>('B', "— · · ·"),
-            new KeyValuePair<char, string>('C', "— · — ·"),
+            new KeyValuePair<char, string>('A', "·—"),
+            new KeyValuePair<char, string>('B', "—···"),
+            new KeyValuePair<char, string>('C', "—·—·"),
 
     };
 
@@ -46,8 +46,7 @@ namespace Translator
 
             for (int i = 0; i < _str2.Length; i++ )
             {
-
-                _srt += listBinary.Find(c => c.Value == morse[i].ToString()).Key;
+                _srt += listMorse.Find(c => c.Value == morse[i].ToString()).Key;
             }
 
             return _srt;
