@@ -59,6 +59,7 @@ namespace Translator
 
         public string TextToMorse(string text)
         {
+
             string _srt = "";
 
             foreach (char _char in text.ToCharArray())
