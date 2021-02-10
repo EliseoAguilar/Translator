@@ -78,7 +78,6 @@ namespace Translator
 
             string _text = "";
             string _text2 = "";
-
             switch (origin)
             {
                 case Format.Binary:
