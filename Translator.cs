@@ -41,6 +41,7 @@ namespace Translator
         public string MorseTotext(string morse)
         {
             throw new NotImplementedException();
+
         }
 
         public string TextToBinary(string text)
